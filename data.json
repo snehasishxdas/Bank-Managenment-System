@@ -1,0 +1,98 @@
+{
+  "bank_name": "Python Bank Management",
+  "customers": {
+    "CUS-A0A087A5A0": {
+      "id": "CUS-A0A087A5A0",
+      "full_name": "Snehasish Das",
+      "email": "snehasishxofficial@gmail.com",
+      "phone": "7439115647",
+      "password_hash": "8d969eef6ecad3c29a3a629280e686cf0c3f5d5a86aff3ca12020c923adc6c92",
+      "created_at": "2026-09-22 15:15:10"
+    }
+  },
+  "accounts": {
+    "PB6EF4CC29DE": {
+      "account_number": "PB6EF4CC29DE",
+      "customer_id": "CUS-A0A087A5A0",
+      "type": "Savings",
+      "balance": 1500.0,
+      "status": "Active",
+      "created_at": "2026-09-22 15:15:10"
+    }
+  },
+  "transactions": [
+    {
+      "id": "TXN-01619BC3EE",
+      "timestamp": "2026-09-22 15:15:10",
+      "type": "Opening Deposit",
+      "amount": 1000.0,
+      "account_number": "PB6EF4CC29DE",
+      "counterparty": "",
+      "note": "Initial account funding"
+    },
+    {
+      "id": "TXN-18BD55D16F",
+      "timestamp": "2026-09-22 15:16:19",
+      "type": "Deposit",
+      "amount": 1000.0,
+      "account_number": "PB6EF4CC29DE",
+      "counterparty": "",
+      "note": "Cash deposit"
+    },
+    {
+      "id": "TXN-E34331A3AC",
+      "timestamp": "2026-09-22 15:16:49",
+      "type": "Fixed Deposit",
+      "amount": 100.0,
+      "account_number": "PB6EF4CC29DE",
+      "counterparty": "",
+      "note": "Fixed deposit FD-1A7F022757"
+    },
+    {
+      "id": "TXN-B94201091B",
+      "timestamp": "2026-09-22 15:17:32",
+      "type": "Bill Payment",
+      "amount": 400.0,
+      "account_number": "PB6EF4CC29DE",
+      "counterparty": "",
+      "note": "Paid Water"
+    }
+  ],
+  "loans": {
+    "LOAN-74595AA4F5": {
+      "id": "LOAN-74595AA4F5",
+      "customer_id": "CUS-A0A087A5A0",
+      "amount": 1000.0,
+      "purpose": "Tran",
+      "months": 120,
+      "annual_rate": 10.0,
+      "status": "Pending",
+      "applied_at": "2026-09-22 15:16:42"
+    }
+  },
+  "fixed_deposits": {
+    "FD-1A7F022757": {
+      "id": "FD-1A7F022757",
+      "customer_id": "CUS-A0A087A5A0",
+      "source_account": "PB6EF4CC29DE",
+      "principal": 100.0,
+      "months": 120,
+      "annual_rate": 6.5,
+      "opened_at": "2026-09-22 15:16:49",
+      "maturity_date": "2036-07-31",
+      "status": "Active"
+    }
+  },
+  "bills": {
+    "CUS-A0A087A5A0": [
+      {
+        "id": "BILL-FFFC2DFFCC",
+        "biller": "Water",
+        "amount": 400.0,
+        "paid_at": "2026-09-22 15:17:32",
+        "account_number": "PB6EF4CC29DE"
+      }
+    ]
+  },
+  "beneficiaries": {}
+}
